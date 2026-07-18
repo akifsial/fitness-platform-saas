@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Platform</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link href="./css/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col mt-20 mb-10 justify-center items-center">
+        <form class="flex flex-col gap-8 items-center" id="form" action="/">
+            <div class="text-center flex flex-col gap-1.5">
+                <h1 class="text-4xl font-bold">Welcome Buddy !</h1>
+                <h2 class="text-gray-400">Please fillout these details</h2>
+            </div>
+            <div class="flex flex-col gap-2.5">
+                <label for="Username">Username</label>
+                <input class="w-80 border-purple-200 border-2 rounded-xl focus:outline-none block px-5 py-2" type="text" name="email" id="email" placeholder="Enter Your Username...">
+            </div>
+            <div class="flex flex-col gap-2.5">
+                <label for="email">Email</label>
+                <input class="w-80 border-purple-200 border-2 rounded-xl focus:outline-none block px-5 py-2" type="text" name="email" id="email" placeholder="Enter Your Email...">
+            </div>
+            <div class="flex flex-col gap-2.5">
+                <label for="password">Password</label>
+                <div class="w-80 border-purple-200 border-2 rounded-xl  px-5 py-2 flex items-center justify-between">
+                    <input class="focus:outline-none" type="password" name="password" id="password" placeholder="Enter Your Password...">
+                    <img id="eyeicon" class="w-5 h-3 cursor-pointer" src="assets/logos/eye-close.png" alt="">
+                </div>
+            </div>
+            <button class="w-80 py-2 text-white rounded-xl mt-5 bg-blue-500">Sign in</button>
+            <div class="text-gray-400 opacity-20">⸻ OR ⸻</div>
+            <button class="flex gap-2.5 w-80 py-2 border-purple-200 border-2 rounded-xl justify-center items-center">
+                <img class="w-5" src="assets/logos/google.svg" alt="">
+                <p> Continue with Google</p>
+            </button>
+            <div>
+                <p class="text-gray-400">Already have an Account?<button class="text-blue-600 font-bold">  Login</button></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
