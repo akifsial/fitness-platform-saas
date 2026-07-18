@@ -22,6 +22,7 @@
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
+        usernameError.textContent = "";
         emailError.textContent = "";
         passwordError.textContent = "";
         let valid = true;
@@ -35,7 +36,7 @@
 
             }else if (username.value.length < 5) {
                 usernameError.textContent = "Username must be at least 5 characters";
-                valid = false;
+                valid = true;
             }
 
             if(email.value.trim() === "") {
