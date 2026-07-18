@@ -33,8 +33,8 @@
                 usernameError.textContent = "Username is required";
                 valid = false;
 
-            }else if (username.value.length < 8) {
-                usernameError.textContent = "Username must be at least 8 characters";
+            }else if (username.value.length < 5) {
+                usernameError.textContent = "Username must be at least 5 characters";
                 valid = false;
             }
 
