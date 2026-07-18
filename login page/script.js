@@ -43,9 +43,4 @@
                 passwordError.textContent = "Password must be at least 8 characters";
                 valid = false;
             }
-
-            if (valid) {
-                alert("Login Successful!");
-                form.reset();
-            }
     });
